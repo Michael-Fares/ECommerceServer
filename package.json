@@ -25,6 +25,9 @@
     "express": "^4.17.2",
     "stripe": "^8.195.0"
   },
+  "engines": {
+    "node": "14.x"
+  },
   "devDependencies": {
     "nodemon": "^2.0.15"
   }

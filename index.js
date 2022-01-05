@@ -9,6 +9,10 @@ app.use(cors())
 const storeItems = require('./storeItems.js')
 const stripe = require('stripe')(process.env.STRIPE_PRIVATE_KEY)
 
+app.get('/', (req, res) => {
+  res.send('Welcome to my server!')
+})
+
 app.post('/create-checkout-session', async (req, res) => {
   try {
     const itemsSentForCharge = req.body.checkoutItemsToServer
